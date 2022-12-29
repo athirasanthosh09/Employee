@@ -24,7 +24,7 @@ export class UserListComponent implements OnInit {
   }
 
   addusers(){
-    this.Route.navigateByUrl('userdetails')
+    this.Route.navigateByUrl('userdetails/:id')
   }
 
   add() {

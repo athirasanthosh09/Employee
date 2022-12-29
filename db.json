@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "user": [
+    {
+      "id": "123",
+      "name": "athira",
+      "email": "athira@gmail.com",
+      "status": "active"
+    },
+    {
+      "id": "4",
+      "name": "aaaa",
+      "email": "add@gmail.com",
+      "status": "active"
+    },
+    {
+      "id": "adarsh7",
+      "name": "adarsh",
+      "email": "adarsh7@gmail.com",
+      "status": "active"
+    }
+  ]
+}

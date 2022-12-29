@@ -31,7 +31,7 @@ export class UsersComponent implements OnInit{
 
 
        
-         if(name=="devika" && pswd=="devu"){
+         if(name=="athira" && pswd=="athira123"){
           this.route.navigateByUrl('userhome')
          }
          else{
