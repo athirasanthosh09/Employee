@@ -1,0 +1,50 @@
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-info" style="width: 200%; margin-left: -130px;" >
+        <div class="container-fluid">
+          <a style="padding-left: 25px;color: beige;font-size: 30px;" routerLink="/users">Employee Portal</a>
+        </div>
+      </nav>
+</div>
+
+<div class="row container">
+    <div class="col-6" style="height: 658px; width: 200px; margin-top: 1px; background-color: rgb(77, 218, 218); margin-left: -10px;;">
+        <a style="text-decoration: none;" routerLink="/user-home">
+            <h4 style="color: white; padding-top: 50px;">Home</h4><br>
+        </a>
+        <a style="text-decoration: none;" routerLink="/user-list">
+            <h4 style="color: white;" >Users</h4>
+        </a>
+    </div>
+
+    <div style="width: 600px; margin-top: 50px; height: 550px;" class="col-10 d1 container bg-light form-control p-4">
+    <h2 style="font-weight: bold;">Add / Edit User</h2>
+    <br><br>
+    <form #heroform="ngForm">
+        <div class="mb-3">
+            <label for="id1" class="form-label">User ID</label>
+            <input type="text" [(ngModel)]="id1" name="id" class="form-control" id="id1">
+
+        </div>
+        <div class="mb-3">
+            <label for="name1" class="form-label">User Name</label>
+            <input type="text" [(ngModel)]="name1" name="name" class="form-control" id="name1">
+
+        </div>
+        <div class="mb-3">
+            <label for="email1" class="form-label">Email Id</label>
+            <input type="text" [(ngModel)]="email1" name="email" class="form-control" id="email1">
+
+        </div>
+        <div class="mb-3">
+            <label for="status1" class="form-label">Status</label>
+            <input type="text" [(ngModel)]="status1" name="status" class="form-control" id="status1">
+
+        </div>
+<br>
+        <button (click)="add()" style="margin-left: 200px;" type="submit" class="btn btn-success">Save</button>
+        <button (click)="cancel(); heroform.resetForm()" style="margin-left: 20px;" type="submit" class="btn btn-warning">Cancel</button>
+        <button (click)="update()" style="margin-left: 30px;" type="submit" class="btn btn-secondary">Update</button>
+    </form>
+    <br>
+ </div>
+</div>
